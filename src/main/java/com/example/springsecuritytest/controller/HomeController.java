@@ -14,6 +14,10 @@ public class HomeController {
 
     @Autowired
     StudentSevice s=new StudentSevice();
+    @GetMapping("/")
+    public String welcome(){
+        return "Welcome" ;
+    }
     @GetMapping("/home")
     public String home(){
         return "Welcome to Home" ;
